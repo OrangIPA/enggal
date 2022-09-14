@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#1f2f21, #fa2e13);
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #8c8c8c;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: none;
+}
+
+header ul li a:hover {
+    outline: white;
+    outline-width: 2px;
+    color: black;
+}
+header ul li a.active {
+    outline-width: 1px;
+    outline-style:auto;
+    outline-color: white;
+    color: black;
+}
+
+#logo-enggal {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
