@@ -28,20 +28,20 @@ header ul li a {
     padding: 6px 15px;
     color: #8c8c8c;
     border-radius: 20px;
-    outline: none;
-    box-shadow: none;
+}
+
+header ul li a.active,
+header ul li a:hover {
+    outline: white solid 2px;
+    color: white;
 }
 
 header ul li a:hover {
-    outline: white;
-    outline-width: 2px;
-    color: black;
+    outline-style: dashed;
 }
-header ul li a.active {
-    outline-width: 1px;
-    outline-style:auto;
-    outline-color: white;
-    color: black;
+
+img {
+    pointer-events: none;
 }
 
 #logo-enggal {
@@ -50,4 +50,30 @@ header ul li a.active {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 30%;
+}
+
+#gunung {
+    position: absolute;
+    top: 45vh;
+    width: 100%;
+    overflow-x: hidden;
+    z-index: 2;
+}
+
+#bianglala {
+    position: absolute;
+    top: 30vh;
+    left: 8%;
+    width: 28vw;
+    height: auto;
+    z-index: 1;
+}
+
+#dino {
+    position: absolute;
+    top: 30vh;
+    right: 0%;
+    width: 30vw;
+    height: auto;
+    z-index: 1;
 }
