@@ -4,12 +4,18 @@
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(#1f2f21, #fa2e13);
+    background: linear-gradient(#1f212f, #fa2e13);
+}
+
+header {
+    position: relative;
+    z-index: 1000;
 }
 
 header ul {
@@ -30,18 +36,23 @@ header ul li a {
     border-radius: 20px;
 }
 
-header ul li a.active,
-header ul li a:hover {
+header ul li a.active{
     outline: white solid 2px;
     color: white;
 }
 
 header ul li a:hover {
-    outline-style: dashed;
+    outline: white dashed 2px;
+    color: white;
+}
+
+section {
+    overflow: hidden;
 }
 
 img {
     pointer-events: none;
+    overflow-y:hidden
 }
 
 #logo-enggal {
@@ -50,12 +61,14 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 30%;
+    overflow-y: hidden;
 }
 
 #gunung {
     position: absolute;
-    top: 45vh;
+    top: 100vh;
     width: 100%;
+    transform: translate(0%, -100%);
     overflow-x: hidden;
     z-index: 2;
 }
@@ -71,9 +84,34 @@ img {
 
 #dino {
     position: absolute;
-    top: 30vh;
+    top: 25vh;
     right: 0%;
-    width: 30vw;
+    width: 50vw;
     height: auto;
     z-index: 1;
+    transform: translate(30%, 0%);
+}
+
+.sec {
+    position: absolute;
+    width: 100%;
+    top: 100vh;
+    padding-top: 200px;
+    padding-bottom: 1000px;
+    background-color: #1f212f;
+    z-index: 100;
+}
+
+.sec .our-projects {
+    display: flex;
+    justify-content: center;
+}
+
+.sec .our-projects .title {
+    text-align: center;
+    font-size: 56px;
+    color: white;
+    font-weight: 600;
+    word-spacing: 10px;
+    letter-spacing: 1px;
 }
