@@ -14,9 +14,20 @@ body {
 }
 
 header {
-    position: relative;
+    position: absolute;
     z-index: 1000;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 50%;
 }
+
+/* Experimental */
+/* header { 
+    width: 30%;
+    right: 0;
+    margin-right: 2%;
+    transform: translate(0%,0%);
+} */
 
 header ul {
     display: flex;
@@ -62,6 +73,7 @@ img {
     transform: translate(-50%, -50%);
     width: 30%;
     overflow-y: hidden;
+    z-index: 2;
 }
 
 #gunung {
@@ -70,7 +82,16 @@ img {
     width: 100%;
     transform: translate(0%, -100%);
     overflow-x: hidden;
-    z-index: 2;
+    z-index: 3;
+}
+
+#gunung-back {
+    position: absolute;
+    top: 100vh;
+    left: 40%;
+    transform: translate(-50%, -100%);
+    overflow-x: hidden;
+    z-index: 1;
 }
 
 #bianglala {
