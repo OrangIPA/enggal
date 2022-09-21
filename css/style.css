@@ -22,13 +22,13 @@ header {
 }
 
 /* Experimental */
-header { 
+/* header { 
     width: 30%;
     left: none;
     right: 0;
     margin-right: 2%;
     transform: translate(50%,0%);
-}
+} */
 
 header ul {
     display: flex;
