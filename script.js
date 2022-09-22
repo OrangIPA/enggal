@@ -8,8 +8,8 @@ window.addEventListener('scroll', function() {
     let value = window.scrollY;
 
     logo.style.marginTop = value * 1 + 'px';
-    bianglala.style.transform = `translate(-${value * 0.2}%, 0%)`;
-    dino.style.transform = `translate(${value * 0.2 + 30}%, 0%)`;
+    bianglala.style.transform = `translate(-${value * 0.1}%, 0%)`;
+    dino.style.transform = `translate(${value * 0.1 + 30}%, 0%)`;
     header.style.top = value * 0.7 + 'px';
     gunungBack.style.marginTop = value * 0.4 + 'px';
 });
