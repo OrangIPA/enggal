@@ -53,6 +53,8 @@ header ul {
 header ul li {
     list-style: none;
     margin-left: 20px;
+    display: flex;
+    align-items: center;
 }
 
 header ul li a { 
