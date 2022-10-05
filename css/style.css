@@ -13,6 +13,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     background: linear-gradient(#1f212f, #fa2e13);
+    /* background: rgb(0, 18, 46); */
 }
 
 header {
@@ -75,6 +76,15 @@ header ul li a:hover {
     color: white;
 }
 
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
 section {
     overflow: hidden;
 }
@@ -111,6 +121,7 @@ section img {
     position: absolute;
     top: 100vh;
     left: 40%;
+    opacity: 100%;
     transform: translate(-50%, -100%);
     overflow-x: hidden;
     z-index: 1;
