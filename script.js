@@ -3,6 +3,8 @@ let bianglala = document.getElementById('bianglala');
 let dino = document.getElementById('dino');
 let gunungBack = document.getElementById('gunung-back');
 let header = document.querySelector('header');
+let ourProject = document.querySelector('.sec .our-projects');
+let projectItem = document.querySelectorAll('.sec .our-projects div .project-item');
 
 const dinoLeft = 900;
 const bianglalaRight = 900;
@@ -18,12 +20,11 @@ dino.style.left = dinoLeft - ((dinoLeft - window.innerWidth) * 0.4) + 'px';
 logo.style.marginTop = value * 1 + 'px';
 header.style.top = value * 0.7 + 'px';
 gunungBack.style.marginTop = value * 0.4 + 'px';
-
+projectItem.forEach((item) => {
+    
+});
 function addListenerMulti(element, eventNames, listener) {
-    var events = eventNames.split(' ');
-    for (var i=0, iLen=events.length; i<iLen; i++) {
-        element.addEventListener(events[i], listener, false);
-    }
+    eventNames.split(' ').forEach(item => element.addEventListener(item, listener, false));
 }
 
 addListenerMulti(window, 'scroll resize', function() {
@@ -38,5 +39,7 @@ addListenerMulti(window, 'scroll resize', function() {
     logo.style.marginTop = value * 1 + 'px';
     header.style.top = value * 0.7 + 'px';
     gunungBack.style.marginTop = value * 0.4 + 'px';
-    // console.log(window.innerWidth);
+    if (value > window.innerHeight && value < window.innerHeight * 10) {
+        ourProject.style.marginTop = value - window.innerHeight + 'px';
+    }
 });
