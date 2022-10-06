@@ -150,7 +150,7 @@ section img {
 .sec {
     position: absolute;
     width: 100%;
-    top: 100vh;
+    top: 99vh;
     padding-top: 200px;
     padding-bottom: 1000px;
     background-color: #1f212f;
