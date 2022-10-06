@@ -1,6 +1,6 @@
 particlesJS("particles-js", {
     particles: {
-        number: { value: 200, density: { enable: true, value_area: 1100 } },
+        number: { value: 300, density: { enable: true, value_area: 1100 } },
         color: { value: "#ffffff" },
         shape: {
             type: "star",
@@ -44,7 +44,7 @@ particlesJS("particles-js", {
             resize: true
         },
         modes: {
-            grab: { distance: 85, line_linked: { opacity: 0.5 } },
+            grab: { distance: 85, line_linked: { opacity: 3 } },
             bubble: { distance: 200, size: 6.5, duration: 1, opacity: 1, speed: 2.5 },
             repulse: { distance: 75, duration: 0.9 },
             push: { particles_nb: 4 },
