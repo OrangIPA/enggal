@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -96,7 +96,7 @@ section img {
 }
 
 #logo-enggal {
-    position: absolute;
+    position: fixed;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -164,6 +164,7 @@ section img {
 }
 
 .sec .our-projects .title {
+    margin-top: 150px;
     text-align: center;
     font-size: 56px;
     color: white;
