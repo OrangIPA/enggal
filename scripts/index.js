@@ -26,6 +26,4 @@ function addListenerMulti(element, eventNames, listener) {
     eventNames.split(' ').forEach(item => element.addEventListener(item, listener, false));
 }
 
-addListenerMulti(window, 'scroll resize', function() {
-    f();
-});
+addListenerMulti(window, 'scroll resize', f);
