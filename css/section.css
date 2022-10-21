@@ -5,7 +5,7 @@
     width: 100%;
     top: 99vh;
     padding-top: 200px;
-    padding-bottom: 1000px;
+    padding-bottom: 100px;
     background-color: #1f212f;
     z-index: 100;
 }
@@ -46,17 +46,12 @@
 .sec .our-projects div .project-item img {
     flex: 1;
     border-radius: 40px;
-    /* min-width: 300px; */
-    /* max-width: 300px; */
     height: 300px;
-    /* outline: #fa2e13 solid 3px; */
-    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .sec .our-projects div .project-item .project-description {
     font-weight: 300;
-    /* font-size: 18px; */
     height: 300px;
     flex: 4;
     gap: 30px;
