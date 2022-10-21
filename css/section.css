@@ -65,3 +65,15 @@
 .sec .our-projects div .project-item .project-description p{
     letter-spacing: 1px;
 }
+
+.sec .our-projects div .project-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.sec .our-projects div .project-item.reverse .project-description {
+    align-items: flex-end;
+}
+
+.sec .our-projects div .project-item.reverse .project-description p {
+    text-align: right;
+}
