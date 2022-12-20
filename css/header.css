@@ -18,12 +18,12 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 30px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10000;
+    z-index: 100;
 }
 
 header .logo {
@@ -42,6 +42,7 @@ header .logo img {
 
 header .logo p {
     margin-left: 20px;
+    width: fit-content;
 }
 
 header ul {
@@ -74,13 +75,17 @@ header ul li a:hover {
     color: white;
 }
 
+.header-background {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 canvas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    z-index: -1;
 }
 
 section {
@@ -98,15 +103,13 @@ section img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* width: 400px; */
     height: fit-content;
     min-width: 30%;
     overflow-y: hidden;
-    z-index: 2;
+    z-index: -2;
     text-align: center;
     color: #f68726;
     padding: 40px;
-    background-image: url("Logo Enggal Putih.png");
     background-color: rgba(0, 0, 0, 0.4);
     /* border-radius: 30px; */
     pointer-events: none;
@@ -164,4 +167,31 @@ section img {
     z-index: 1;
 }
 
-/* @media all and */
+@media (max-width: 1000px) {
+    header .logo {
+        position: fixed;
+        /* top: 20px; */
+        left: 50%;
+        font-size: 1.5em;
+        transform: translate(-50%, -50%);
+        top: 60px
+    }
+
+    header .logo img {
+        height: 38px;
+    }
+
+    header .logo p {
+        width: min-content;
+    }
+
+    .header-background {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 120px;
+    }
+
+    .non-hamburger-menu {
+        width: 0;
+        display: none;
+    }
+}
