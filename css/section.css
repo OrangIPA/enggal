@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 .sec {
     position: absolute;
     width: 100%;
-    top: 99vh;
-    padding-top: 200px;
+    top: 100vh;
+    padding-top: 50px;
     padding-bottom: 100px;
     background-color: #1f212f;
     z-index: 100;
@@ -52,7 +53,7 @@
 
 .sec .our-projects div .project-item .project-description {
     font-weight: 300;
-    height: 300px;
+    height: fit-content;
     flex: 4;
     gap: 30px;
     display: flex;
@@ -60,7 +61,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     color: white;
+    /* overflow-y:scroll;
+    overflow-x:visible; */
 }
+
 
 .sec .our-projects div .project-item .project-description p{
     letter-spacing: 1px;
@@ -76,4 +80,15 @@
 
 .sec .our-projects div .project-item.reverse .project-description p {
     text-align: right;
+}
+
+@media screen and (max-width: 680px) {
+.sec.our-projects div .project-item .project-description {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%; */
+    color: red;
+}
 }

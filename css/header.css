@@ -10,8 +10,8 @@ body {
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
-    background: linear-gradient(#1f212f, #fa2e13);
-    /* background: rgb(0, 18, 46); */
+    /* background: linear-gradient(#1f212f, #fa2e13); */
+    background: #1f212f;
 }
 
 header {
@@ -75,7 +75,7 @@ header ul li a:hover {
 }
 
 canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -95,13 +95,32 @@ section img {
 
 #logo-enggal {
     position: fixed;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
+    /* width: 400px; */
+    height: fit-content;
     min-width: 30%;
     overflow-y: hidden;
     z-index: 2;
+    text-align: center;
+    color: #f68726;
+    padding: 40px;
+    background-image: url("Logo Enggal Putih.png");
+    background-color: rgba(0, 0, 0, 0.4);
+    /* border-radius: 30px; */
+    pointer-events: none;
+}
+
+#logo-enggal span {
+    font-family: 'montserrat';
+    font-weight: 500;
+    font-style: italic;
+    font-size: 72px;
+}
+
+#logo-enggal span span {
+    color: white;
 }
 
 #gunung {
@@ -144,3 +163,5 @@ section img {
     height: auto;
     z-index: 1;
 }
+
+/* @media all and */
