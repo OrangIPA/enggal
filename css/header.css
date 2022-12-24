@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -71,7 +74,7 @@ header ul li a.active{
 }
 
 header ul li a:hover {
-    outline: white dashed 2px;
+    outline: white solid 2px;
     color: white;
 }
 
@@ -85,86 +88,7 @@ canvas {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
-}
-
-section {
-    overflow: hidden;
-}
-
-section img {
-    position: absolute;
-    pointer-events: none;
-    overflow-y:hidden
-}
-
-#logo-enggal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: fit-content;
-    min-width: 30%;
-    overflow-y: hidden;
-    z-index: -2;
-    text-align: center;
-    color: #f68726;
-    padding: 40px;
-    background-color: rgba(0, 0, 0, 0.4);
-    /* border-radius: 30px; */
-    pointer-events: none;
-}
-
-#logo-enggal span {
-    font-family: 'montserrat';
-    font-weight: 500;
-    font-style: italic;
-    font-size: 72px;
-}
-
-#logo-enggal span span {
-    color: white;
-}
-
-#gunung {
-    position: absolute;
-    top: 100vh;
-    min-height: 30%;
-    min-width: 100%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    overflow-x: hidden;
-    z-index: 5;
-}
-
-#gunung-back {
-    position: absolute;
-    top: 100vh;
-    left: 40%;
-    opacity: 100%;
-    transform: translate(-50%, -100%);
-    overflow-x: hidden;
-    z-index: 1;
-}
-
-#bianglala {
-    position: absolute;
-    top: 30vh;
-    right: 900px;
-    width: 28vw;
-    width: 600px;
-    height: auto;
-    z-index: 2;
-}
-
-#dino {
-    position: absolute;
-    top: 25vh;
-    left: 900px;
-    width: 50vw;
-    width: 1000px;  
-    height: auto;
-    z-index: 1;
+    z-index: 0;
 }
 
 @media (max-width: 1000px) {
@@ -188,6 +112,10 @@ section img {
     .header-background {
         background-color: rgba(0, 0, 0, 0.7);
         height: 120px;
+    }
+
+    .hamburger-menu {
+        z-index: 100;
     }
 
     .non-hamburger-menu {
