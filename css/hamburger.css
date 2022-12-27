@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
 
     #menu__toggle {
         opacity: 0;
@@ -89,7 +89,7 @@
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1050px) {
     .hamburger-menu {
         display: none;
     }

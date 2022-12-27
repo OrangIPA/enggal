@@ -7,6 +7,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none;
 }
 
 body {
@@ -91,7 +92,7 @@ canvas {
     z-index: 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
     header .logo {
         position: fixed;
         /* top: 20px; */

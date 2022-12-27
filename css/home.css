@@ -107,7 +107,7 @@
     color: white;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     .sec .our-projects div {
         width: 85%;
     }
@@ -144,6 +144,9 @@
     .sec .our-projects div .project-item.reverse .project-description p {
         text-align: center;
     }
+}
+
+@media (max-width: 1000px) {
 
     #logo-enggal {
         padding: 20px
